@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.ihyunbeom.owls.WriteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:id="@+id/imgView"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <Button
+                android:layout_width="330dp"
+                android:layout_height="230dp"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:background="#00FFFFFF"
+                android:text="img"
+                android:layout_gravity="center"
+                android:id="@+id/imageSelect"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="select"
+                />
+        </FrameLayout>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="210dp"
+            android:textColor="#262626"
+            android:hint="text area"
+            android:textColorHint="#5e5e5e"
+            android:id="@+id/writeContents"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#50FFFFFF"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            android:rotation="45"
+            android:onClick="createStar"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
