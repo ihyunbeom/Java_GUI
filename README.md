@@ -7,7 +7,7 @@
 6. Simulation_elevator
 
 **Caculator**
-```
+
 1. 문제 정의
 Java GUI 와 Event 를 활용하여 계산기 프로그램을 개발합니다.
 GUI를 사용하여 계산기의 기능을 하는 버튼을 제작하고, 디자인을 합니다. 그리고 일반적인
@@ -27,7 +27,8 @@ GUI를 사용하여 계산기의 기능을 하는 버튼을 제작하고, 디자
 저장하고 있다가 계산에 사용되는 변수입니다. 초기화 값은 10이고, 만약 버튼 ‘1’이 눌렸다면
 cur = cur * chipher + 1; 이 식을 사용하여 현재 입력 되는 숫자 값을 계산했습니다. 마지막으
 로 ‘=’ 버튼이 눌렸을 경우 switch문에서 op (선택 된 연산자) 변수로 case를 구분했습니다.
-```
+![Caculator](./images/calculator1.png)
+![Caculator](./images/calculator2.png)
 **BoxEditor**
 ```
 1. 문제 정의
