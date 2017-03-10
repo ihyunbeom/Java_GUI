@@ -62,8 +62,8 @@
     mousePressed( )에서 click이란 Boolean변수로 Add상태와 Delete상태를 if문으로 구분했
     습니다.</br> 마우스로 클릭한 좌표 값을 받아와서 이미 배열에 저장한 사각형들의 좌표와 비
     교하여 어떤 사각형의 내부인지 찾았습니다.</br> for문안에 if문을 사용하여 좌표를 비교합니
-    다.</br> e.getX( )와 e.getY( )는 마우스 클릭 좌표이고, 배열 x, y, w, h는 사각형의 정보입니다.</br>
-    if(x[i] < e.getX() && (x[i] + w[i]) > e.getX() && y[i] < e.getY() && (y[i] + h[i]) > e.getY())</br>
+    다.</br> e.getX( )와 e.getY( )는 마우스 클릭 좌표이고, 배열 x, y, w, h는 사각형의 정보입니다.</br></br>
+    if(x[i] < e.getX() && (x[i] + w[i]) > e.getX() && y[i] < e.getY() && (y[i] + h[i]) > e.getY())</br></br>
     이 if문이 true가 되면 해당 사각형 좌표들을 0으로 초기화 합니다.</br> 여기서 사각형이 삭제
     될 때 겹쳐지는 사각형의 우선순위에 문제가 있었습니다.</br> 이 문제를 해결하기 위해서 좌
     표 비교 순서를 마지막에 만들어진 사각형부터 비교하여 삭제하고, 삭제되면 for문을
@@ -104,8 +104,8 @@
     10가지 색상을 사용했습니다.</br> 하지만, 색상을 좀더 다양하게 하고 싶어서, Color함수에 직
     접 R,G,B,A의 값을 넣었습니다.</br> 각 값들은 0~255까지의 정보를 가지고 있었습니다.</br> 따라
     서 각 값들에 0~255까지 Math.random( ) 함수를 사용하여, 10개이상의 색상을 구현했습
-    니다. </br>투명도인 A(Alpha)값은 255로 고정했습니다.</br>
-    c = new Color((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255), 255);</br>
+    니다. </br>투명도인 A(Alpha)값은 255로 고정했습니다.</br></br>
+    c = new Color((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255), 255);</br></br>
     폭탄 객체를 생성한 뒤에 바로 타이머를 시작합니다.</br> TimerHandler 클래스에서는 각각
     폭탄 객체들의 y좌표에 s(속도)를 더해줍니다.</br> 속도는 랜덤이기 때문에 각각 폭탄들 마다
     움직이는 속도가 다르게 됩니다.</br> 그리고 폭탄의 위치가 화면 밖으로 (제거가 되지 않은
@@ -115,8 +115,8 @@
     표 값을 비교하여 폭탄의 제거 유무를 정합니다.</br> 먼저 생성되는 객체가 화면상 뒤쪽에 그
     려지기 때문에 반복문 for에서 i의 값을 감소시킵니다. </br>그리고 원의 좌표의 x, y값이 원의
     중심이 아닌 왼쪽 상단에 위치합니다.</br> 따라서 폭탄의 좌표에 각각 반지름을 더해준 값이
-    폭탄의 중심이고, 좌표에 반지름을 더합니다.</br>
-    if(Math.sqrt(Math.pow((e.getX() - (ball[i].x + ball[i].r)), 2) + Math.pow((e.getY() - (ball[i].y + ball[i].r)),2)) < ball[i].r)</br>
+    폭탄의 중심이고, 좌표에 반지름을 더합니다.</br></br>
+    if(Math.sqrt(Math.pow((e.getX() - (ball[i].x + ball[i].r)), 2) + Math.pow((e.getY() - (ball[i].y + ball[i].r)),2)) < ball[i].r)</br></br>
     위의 if문이 참일 경우 폭탄이 클릭 된 상태이고, newBomb( )함수를 사용하여 폭탄의 값
     을 초기화 합니다.</br> 여기서 Score값을 하나 증가 시킵니다.</br> 그리고 만약 Score가 10개가
     되면 타이머를 멈추고, 프로그램을 종료합니다. </br></br>
