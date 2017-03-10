@@ -184,6 +184,7 @@
         바꾸어서 sin과 cos에 넣는다.</br> 마지막으로 파편은 회전을 하면서 계속 앞으로 나아가
         야 하기 때문에 dy값을 일정량 증가 시켜준다.</br>
 ![EarthDefensor](./images/rocket2.png)</br>
+![EarthDefensor](./images/spacewar.gif)</br>
 ***
 ##5.MoonPatrol</br>
 ***
