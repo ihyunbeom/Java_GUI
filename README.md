@@ -1,10 +1,11 @@
 # systemPrograming_java
-##1. Caculator
-##2. BoxEditor
-##3. EarthDefensor
-##4. SpaceWar
-##5. MoonPatrol
-##6. Simulation_elevator
+###1. Caculator
+###2. BoxEditor
+###3. EarthDefensor
+###4. SpaceWar
+###5. MoonPatrol
+###6. Simulation_elevator
+***
 
 ###1.Caculator
 
@@ -30,7 +31,7 @@
 
 ![Caculator](./images/calculator1.png)
 ![Caculator](./images/calculator2.png)
-
+***
 ###2.BoxEditor
 
 1. 문제 정의</br>
@@ -63,7 +64,7 @@
     습니다.</br> 마우스로 클릭한 좌표 값을 받아와서 이미 배열에 저장한 사각형들의 좌표와 비
     교하여 어떤 사각형의 내부인지 찾았습니다.</br> for문안에 if문을 사용하여 좌표를 비교합니
     다.</br> e.getX( )와 e.getY( )는 마우스 클릭 좌표이고, 배열 x, y, w, h는 사각형의 정보입니다.</br></br>
-    'if(x[i] < e.getX() && (x[i] + w[i]) > e.getX() && y[i] < e.getY() && (y[i] + h[i]) > e.getY())'</br></br>
+    `if(x[i] < e.getX() && (x[i] + w[i]) > e.getX() && y[i] < e.getY() && (y[i] + h[i]) > e.getY())`</br></br>
     이 if문이 true가 되면 해당 사각형 좌표들을 0으로 초기화 합니다.</br> 여기서 사각형이 삭제
     될 때 겹쳐지는 사각형의 우선순위에 문제가 있었습니다.</br> 이 문제를 해결하기 위해서 좌
     표 비교 순서를 마지막에 만들어진 사각형부터 비교하여 삭제하고, 삭제되면 for문을
@@ -75,7 +76,7 @@
 
 ![BoxEditor](./images/box1.PNG)
 ![BoxEditor](./images/box2.PNG)
-
+***
 ###3.EarthDefensor
 
 1. 문제 정의</br>
@@ -125,17 +126,11 @@
 ![EarthDefensor](./images/defensor2.PNG)
 ![EarthDefensor](./images/defensor3.PNG)
 ![EarthDefensor](./images/defensor4.PNG)
-
+***
 ##4.SpaceWar
-```
-
-```
+***
 ##5.MoonPatrol
-```
-
-```
+***
 ##6.Simulation_elevator
-```
-
-```
+***
 
