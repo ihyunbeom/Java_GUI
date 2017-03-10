@@ -29,8 +29,9 @@ cur = cur * chipher + 1; 이 식을 사용하여 현재 입력 되는 숫자 값
 로 ‘=’ 버튼이 눌렸을 경우 switch문에서 op (선택 된 연산자) 변수로 case를 구분했습니다.
 ![Caculator](./images/calculator1.png)
 ![Caculator](./images/calculator2.png)
+
 **BoxEditor**
-```
+
 1. 문제 정의
     1.1 문제 정의
     마우스로 사각형을 그립니다. 여러 방향으로 마우스를 움직여도 사각형이 올바르게
@@ -72,7 +73,10 @@ break하는 방법으로 해결했습니다.
 문제를 해결하기 위해서 g.fillRect( )를 사용하기전에 setColor( )로 하얀색을 지정하고 다
 시 setColor( )를 빨강색으로 바꾼 뒤 g.drawRect( )로 사각형을 그리는 순서로 문제를 해
 결했습니다.
-```
+
+![BoxEditor](./images/box1.png)
+![BoxEditor](./images/box2.png)
+
 **EarthDefensor**
 ```
 1. 문제 정의
